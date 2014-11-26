@@ -1,4 +1,4 @@
-FROM         ubuntu:12.04
+FROM         ubuntu:latest
 MAINTAINER   Jordan Wesolowski <jrwesolo@gmail.com>
 
 RUN echo 'Etc/UTC' > /etc/timezone && dpkg-reconfigure -f noninteractive tzdata
