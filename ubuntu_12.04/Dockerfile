@@ -1,7 +1,7 @@
 FROM         ubuntu:12.04
 MAINTAINER   Jordan Wesolowski <jrwesolo@gmail.com>
 
-RUN echo 'Etc/UTC' > /etc/timezone && dpkg-reconfigure --f noninteractive tzdata
+RUN echo 'Etc/UTC' > /etc/timezone && dpkg-reconfigure -f noninteractive tzdata
 
 RUN apt-get update -y
 RUN apt-get upgrade -y
